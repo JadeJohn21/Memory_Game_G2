@@ -310,9 +310,9 @@ namespace memoryGame
             this.niceFoodLbl.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.niceFoodLbl.Location = new System.Drawing.Point(247, 360);
             this.niceFoodLbl.Name = "niceFoodLbl";
-            this.niceFoodLbl.Size = new System.Drawing.Size(141, 20);
+            this.niceFoodLbl.Size = new System.Drawing.Size(138, 20);
             this.niceFoodLbl.TabIndex = 45;
-            this.niceFoodLbl.Text = "This food is very nice";
+            this.niceFoodLbl.Text = "The food is very nice";
             // 
             // niceFoodPic
             // 
@@ -350,7 +350,7 @@ namespace memoryGame
             this.loudNeighboursLbl.AutoSize = true;
             this.loudNeighboursLbl.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
             this.loudNeighboursLbl.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.loudNeighboursLbl.Location = new System.Drawing.Point(216, 360);
+            this.loudNeighboursLbl.Location = new System.Drawing.Point(227, 360);
             this.loudNeighboursLbl.Name = "loudNeighboursLbl";
             this.loudNeighboursLbl.Size = new System.Drawing.Size(189, 20);
             this.loudNeighboursLbl.TabIndex = 49;

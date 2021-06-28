@@ -54,6 +54,10 @@ namespace memoryGame
             button6.Visible = false;
             button7.Visible = false;
             button8.Visible = false;
+
+            congratsLbl.Visible = false;
+            startNextLevel.Visible = false;
+            startOtherLevel.Visible = false;
         }
 
         private void LeftArrow_Click(object sender, EventArgs e)
@@ -270,6 +274,19 @@ namespace memoryGame
             question4Option2.Visible = false;
             question4Option3.Visible = false;
             question4Option4.Visible = false;
+
+            congratsLbl.Visible = true;
+            startNextLevel.Visible = true;
+            startOtherLevel.Visible = true;
+        }
+
+        private void startNextLevel_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            QuestionsForm questionsForm = new QuestionsForm();
+            questionsForm.Close();                                 //Close this form.
+            DifficultForm difficultForm = new DifficultForm();
+            difficultForm.Show();                                  // Open the next one.
         }
     }
 }
