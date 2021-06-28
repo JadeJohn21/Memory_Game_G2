@@ -81,6 +81,9 @@ namespace memoryGame
             this.question5Button3 = new System.Windows.Forms.Button();
             this.question5Button2 = new System.Windows.Forms.Button();
             this.question5Button1 = new System.Windows.Forms.Button();
+            this.congratsLbl = new System.Windows.Forms.Label();
+            this.startOtherLevel = new System.Windows.Forms.Label();
+            this.startNextLevel = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.LeftArrow)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grayHairPic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -638,7 +641,7 @@ namespace memoryGame
             // 
             this.question5Button4.Font = new System.Drawing.Font("Gadugi", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
             this.question5Button4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(37)))), ((int)(((byte)(52)))));
-            this.question5Button4.Location = new System.Drawing.Point(258, 472);
+            this.question5Button4.Location = new System.Drawing.Point(259, 472);
             this.question5Button4.Name = "question5Button4";
             this.question5Button4.Size = new System.Drawing.Size(326, 29);
             this.question5Button4.TabIndex = 74;
@@ -650,7 +653,7 @@ namespace memoryGame
             // 
             this.question5Button3.Font = new System.Drawing.Font("Gadugi", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
             this.question5Button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(37)))), ((int)(((byte)(52)))));
-            this.question5Button3.Location = new System.Drawing.Point(258, 437);
+            this.question5Button3.Location = new System.Drawing.Point(259, 437);
             this.question5Button3.Name = "question5Button3";
             this.question5Button3.Size = new System.Drawing.Size(326, 29);
             this.question5Button3.TabIndex = 73;
@@ -674,7 +677,7 @@ namespace memoryGame
             // 
             this.question5Button1.Font = new System.Drawing.Font("Gadugi", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
             this.question5Button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(37)))), ((int)(((byte)(52)))));
-            this.question5Button1.Location = new System.Drawing.Point(258, 370);
+            this.question5Button1.Location = new System.Drawing.Point(259, 370);
             this.question5Button1.Name = "question5Button1";
             this.question5Button1.Size = new System.Drawing.Size(326, 29);
             this.question5Button1.TabIndex = 71;
@@ -682,12 +685,50 @@ namespace memoryGame
             this.question5Button1.UseVisualStyleBackColor = true;
             this.question5Button1.Click += new System.EventHandler(this.question5Button1_Click);
             // 
+            // congratsLbl
+            // 
+            this.congratsLbl.AutoSize = true;
+            this.congratsLbl.Font = new System.Drawing.Font("Gadugi", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.congratsLbl.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.congratsLbl.Location = new System.Drawing.Point(161, 205);
+            this.congratsLbl.Name = "congratsLbl";
+            this.congratsLbl.Size = new System.Drawing.Size(551, 32);
+            this.congratsLbl.TabIndex = 75;
+            this.congratsLbl.Text = "Congratulations, You completed this level";
+            // 
+            // startOtherLevel
+            // 
+            this.startOtherLevel.AutoSize = true;
+            this.startOtherLevel.Font = new System.Drawing.Font("Courier New", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.startOtherLevel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.startOtherLevel.Location = new System.Drawing.Point(161, 261);
+            this.startOtherLevel.Name = "startOtherLevel";
+            this.startOtherLevel.Size = new System.Drawing.Size(557, 17);
+            this.startOtherLevel.TabIndex = 76;
+            this.startOtherLevel.Text = "Would you like to star the nest level? Click the button below";
+            // 
+            // startNextLevel
+            // 
+            this.startNextLevel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.startNextLevel.Font = new System.Drawing.Font("Gadugi", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.startNextLevel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(37)))), ((int)(((byte)(52)))));
+            this.startNextLevel.Location = new System.Drawing.Point(367, 300);
+            this.startNextLevel.Name = "startNextLevel";
+            this.startNextLevel.Size = new System.Drawing.Size(123, 58);
+            this.startNextLevel.TabIndex = 77;
+            this.startNextLevel.Text = "Start";
+            this.startNextLevel.UseVisualStyleBackColor = true;
+            this.startNextLevel.Click += new System.EventHandler(this.startNextLevel_Click);
+            // 
             // QuestionsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(37)))), ((int)(((byte)(52)))));
             this.ClientSize = new System.Drawing.Size(859, 550);
+            this.Controls.Add(this.startNextLevel);
+            this.Controls.Add(this.startOtherLevel);
+            this.Controls.Add(this.congratsLbl);
             this.Controls.Add(this.question5Button4);
             this.Controls.Add(this.question5Button3);
             this.Controls.Add(this.question5Button2);
@@ -809,5 +850,8 @@ namespace memoryGame
         private System.Windows.Forms.Button question5Button3;
         private System.Windows.Forms.Button question5Button2;
         private System.Windows.Forms.Button question5Button1;
+        private System.Windows.Forms.Label congratsLbl;
+        private System.Windows.Forms.Label startOtherLevel;
+        private System.Windows.Forms.Button startNextLevel;
     }
 }
